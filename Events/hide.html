@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hide and show</title>
+</head>
+<body>
+	<!-- <button onclick="showdiv()">Show</button>
+	<button onclick="hidediv()">Hide</button>
+	<div id="n1">Nandu</div>
+	<script type="text/javascript">
+		function hidediv(){
+			document.getElementById('n1').style.display='none'
+		}
+		function showdiv(){
+			document.getElementById('n1').style.display='block'
+
+		}
+	</script> -->
+
+<!-- <center>
+	<button onclick="inc()">Inc</button>
+	<button onclick="dec()">Dec</button>
+	<p>Output</p>
+	<p id="output_id"></p>
+</center>
+	<script type="text/javascript">
+		var i=1;
+		function inc(){
+			if(i<6){
+				document.getElementById('output_id').innerText=i++
+			}
+		}
+		function dec(){
+			if(i>0){
+				var res=i--
+				document.getElementById('output_id').innerText=res;
+			}
+		}
+	</script> -->
+
+<center>
+	<button onclick="next()">Next</button>
+	<button onclick="prev()">Prev</button>
+	<p>Output</p>
+	<p id="output_id"></p>
+</center>
+	<script type="text/javascript">
+		var i=1;
+		function next(){
+			if(i<6){
+				var res=i++
+				document.getElementById('output_id').innerHTML="<img src='Images/"+res+".jpg' style='width:400px;height:400px'/>"
+			}
+		}
+		function prev(){
+			if(i>0){
+				var res=i--
+				if(res!=6){
+					document.getElementById('output_id').innerHTML="<img src='Images/"+res+".jpg' style='width:400px;height:400px'/>"
+				}
+			}
+		}
+	</script>
+
+
+</body>
+</html>

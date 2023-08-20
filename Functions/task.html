@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+</head>
+<body>
+	<table id="Course_Table">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Branch</th>
+            <th>Place</th>
+        </tr>
+    </table>
+    <script>
+        var Courses = [
+            {name: 'Nandu', Number:'0518', Branch:'CSE',  place: 'aditya'},
+            {name: 'Anki', Number:'1201', Branch:'IT', place: 'aditya'} ,   
+            {name: 'Bhuvana', Number:'0534', Branch:'CSE',  place: 'aditya'},    
+            {name: 'Prakee', Number:'0538', Branch:'cse', place: 'aditya'}   
+        ];
+		for(i=0;i<=courses.length-1;i++)
+		{
+			let tr = document.createElement('tr')
+			let td1 = document.createElement('td')
+			let td2 = document.createElement('td')
+			let td3 = document.createElement('td')
+			let td4 = document.createElement('td')
+			td1.innerText = courses[i].name
+			td2.innerText = courses[i].cno
+			td3.innerText = courses[i].fees
+			td4.innerText = courses[i].places
+			tr.append(td1)
+			tr.append(td2)
+			tr.append(td3)
+			tr.append(td4)
+			document.getElementById('tbodyid').append(tr)
+		}
+	</script>
+</body>
+</html>

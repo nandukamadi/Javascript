@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image</title>
+</head>
+<body>
+	<img id="img_id" src="Images/appye.jpg">
+	<a id="a1"></a>
+	<script type="text/javascript">
+		let img=document.getElementById('img_id')
+		img.src='Images/apple.jpg'
+	</script>
+	<!-- <input type="text" name="" id="ins_id" value="anki">
+	<label>Please enter name</label>
+	<script type="text/javascript">
+		let ins=document.getElementById('ins_id');
+		ins.value='Nandu'
+		document.getElementById('ins_id').style.border='1px solid red';
+	</script> -->
+	<!-- <p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BS</p>
+	<p class="topic">JS</p>
+	<script type="text/javascript">
+		let para=document.getElementsByClassName('topic')
+		console.log(para)
+		para[0].innerHTML='Hyper Text Markup Language'
+		para[0].style.color='green'
+		para[2].innerHTML='BootStrap'
+		para[2].style.color='red'
+	</script> -->
+	<!-- <ul>
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+	</ul>
+	<script type="text/javascript">
+		let lis=document.getElementsByTagName('li')
+		console.log(lis)
+		lis[0].innerText='Aditya Enginnering College'
+		lis[0].style.color='red'
+		lis[0].style.fontSize='30px'
+		lis[0].style.fontFamily='cursive'
+	</script> -->
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BS</p>
+	<p class="topic">JS</p>
+	<ul>
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+	</ul>
+	<script type="text/javascript">
+		let ps=document.querySelector('.topic')
+		ps.innerHTML='<span>Hyper text markup language</span>'
+		let lis=document.querySelector('li');
+		lis.innerText='Aditya college'
+	</script>
+</body>
+</html>

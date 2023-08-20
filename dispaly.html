@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+</head>
+<body>
+	<script>
+		var obj=[{
+			'name':'nandu',
+			'rollno':518,
+			'college':'ACET',
+			'branch':'CSE'
+		},
+		{
+			'name':'prakee',
+			'rollno':538,
+			'college':'ACET',
+			'branch':'CSE'
+		},
+		{
+			'name':'bhuvana',
+			'rollno':534,
+			'college':'ACET',
+			'branch':'CSE'
+		},
+		{
+			'name':'anki',
+			'rollno':1201,
+			'college':'ACET',
+			'branch':'IT'
+		}]
+		for (var i=0;i<obj.length;i++){
+      		for (var key in obj[i]){
+        		document.write(obj[i][key]+"<br>")
+      		}
+      		document.write("<br>")
+    	}
+	</script>
+</body>
+</html>
